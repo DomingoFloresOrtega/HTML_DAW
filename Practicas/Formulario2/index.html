@@ -1,0 +1,262 @@
+<html>
+    <head>
+        <title>Ejemplo de formulario</title>
+        <meta charset="UTF-8" />
+        <link rel="shortcut icon" href="favicon.png" />
+    </head>
+
+    <body>
+        <h1 align="center">ENCUESTA INFORMÁTICA</h1>
+        <form action="index.html" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <table>
+                    <tr>
+                        <td>
+                            <p>Edad:<input type="text" name="edad" size="5" /></p>
+                        </td>
+                       
+                        <td>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Sexo: 
+                                <input type="radio" name="sexo" id="hombre" value="hombre">
+                                <label for="hombre">Hombre</label>
+                                <input type="radio" name="sexo" id="mujer" value="hombre">
+                                <label for="mujer">Mujer</label>
+                            </p>
+                        </td>
+
+                        <td>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estas estudiando:
+                                <select name="estudiando">
+                                    <option value="yes">Sí</option>
+                                    <option value="no">No</option>
+                                 </select>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preguntas generales</legend>
+
+                <p>¿Tienes ordenador en tú casa?
+                    <input type="radio" name="question1" value="yes" id="yes" />
+                    <label for="yes">Sí</label>
+                    <input type="radio" name="question1" value="no" id="no" />
+                    <label for="no">No</label>
+                </br>
+
+                    ¿Lo utilizas sólo tú o lo compartes con otras personas?
+                    <input type="radio" name="question2" id="propio" value="propio" />
+                    <label for="propio">Propio</label>
+                    <input type="radio" name="question2" id="compartido" value="compartido" />
+                    <label for="compartido">Compartido</label>
+                </br>
+
+                    En periodos de clase:
+                    <ul>
+                        <li>¿Cuantos dias a la semana sueles encender el ordenador? <select name="dias_ordenador">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select></li>
+
+                        <li>¿Cuantas horas diarias sueles gastar el ordenador (cada día)? <select name="horas_ordenador">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select></li>
+                    </ul>
+
+                    En periodos de vacaciones:
+                    <ul>
+                        <li>¿Cuantos dias a la semana sueles encender el ordenador? <select name="dias1_ordenador">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select></li>
+
+                        <li>¿Cuantas horas diarias sueles gastar el ordenador (cada día)? <select name="horas1_ordenador">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select></li>
+                    </ul>
+                </p>
+
+                <p>
+                    ¿A qué dedicas tu tiempo en el ordenador?
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="tiempo_ordenador" value="escribir" />
+                                <label for="escribir">Escribir</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" name="tiempo_ordenador" value="dibujar" />
+                                <label for="dibujar">Dibujar</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" name="tiempo_ordenador" value="programar" />
+                                <label for="programar">Programar</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" name="tiempo_ordenador" value="musica" />
+                                <label for="musica">Hacer música</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" name="tiempo_ordenador" value="fotografico" />
+                                <label for="fotografico">Retoque fotográfico</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="tiempo_ordenador" value="jugar" />
+                                <label for="jugar">Jugar</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" name="tiempo_ordenador" value="paginas" />
+                                <label for="paginas">Ver páginas web</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" name="tiempo_ordenador" value="chatear" />
+                                <label for="chatear">Chatear</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" name="tiempo_ordenador" value="intercambio" />
+                                <label for="intercambio">Intercambiar música</label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" name="tiempo_ordenador" value="intercambio1" />
+                                <label for="intercambio1">Intercambiar peliculas/series</label>
+                            </td>
+                        </tr>
+                    </table>
+
+                    Otras actividades (especifica): <input type="text" name="texto1" /> <input type="text" name="texto2" /> <input type="text" name="texto3" />
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Descripción</legend>
+
+                <p>Tipo:
+                    <input type="radio" name="tipo" id="sobremesa" value="sobremesa" />
+                    <label for="sobremesa">Sobremesa -</label>
+                    <input type="radio" name="tipo" id="portatil" value="portatil" />
+                    <label for="portatil">Portátil -</label>
+                    <input type="radio" name="tipo" id="tablet" value="tablet" />
+                    <label for="tablet">Tablet PC</label>
+                </br>
+
+                    Antigüedad: 
+                        <select name="antiguedad">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                </br>
+
+                    <input type="radio" name="marca" id="sinmarca" value="sinmarca" />
+                    <label for="sinmarca">Sin marca</label>
+                    <input type="radio" name="marca" id="demarca" value="demarca" />
+                    <label for="demarca">De marca (especificar):</label>
+                    <input type="text" name="texto_demarca" />
+                </br>
+
+                    Procesador: 
+                        Marca:
+                        <select name="procesador">
+                            <option value="intel">Intel</option>
+                            <option value="amd">AMD</option>
+                        </select>
+                        - Modelo: 
+                        <select name="modelo">
+                            <option value="i5">i5</option>
+                            <option value="i7">i7</option>
+                        </select>
+                        - Velocidad: 
+                        <select name="velocidad">
+                            <option value="370">3,70GHz</option>
+                            <option value="2">2GHz</option>
+                        </select>
+                </br>
+
+                    Memoria RAM: 
+                        <select name="ram">
+                            <option value="ddr3">DDR3</option>
+                            <option value="ddr4">DDR4</option>
+                        </select>
+                </br>
+                
+                    Disco duro: 
+                        <select name="disk">
+                            <option value="samsung">Samsung</option>
+                            <option value="wd">WD</option>
+                        </select>
+                </br>
+
+                    CD/DVD:
+                            <input type="checkbox" name="cd" />
+                            <label for="cdrom">CD-ROM</label>
+
+                            <input type="checkbox" name="cd" />
+                            <label for="cdrw">CD-RW</label>
+
+                            <input type="checkbox" name="cd" />
+                            <label for="dvdrom">DVD-ROM</label>
+
+                            <input type="checkbox" name="cd" />
+                            <label for="dvdrw">DVD-RW y/o +RW</label>
+                </br>
+
+                    Monitor:
+                    Tipo
+                        <input type="radio" name="monitor" id="crt" value="crt" />
+                        <label for="crt">CRT -</label>
+                        <input type="radio" name="monitor" id="tft" value="tft" />
+                        <label for="tft">TFT -</label>
+                    Tamaño:
+                        <input type="radio" name="tamaño" id="-17" value="-17" />
+                        <label for="-17">Menos de 17" -</label>
+                        <input type="radio" name="tamaño" id="17" value="17" />
+                        <label for="17">17" -</label>
+                        <input type="radio" name="tamaño" id="19" value="-17" />
+                        <label for="19">19" -</label>
+                        <input type="radio" name="tamaño" id="+19" value="17" />
+                        <label for="+19">Más de 19"</label>
+            </br>
+
+                    Acceso a Internet:
+                    <select name="internet">
+                        <option name="internet_acceso" value="yes">Sí</option>
+                        <option name="internet_acceso" value="no">No</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            </br>
+
+            <div align="right" name="buttons">
+                <input type="reset" name="reset" value="Borrar todo" />
+                <input type="submit" name="comprobar" value="Comprobar" />
+             </div>
+        </form>
+    </body>
+</html>
