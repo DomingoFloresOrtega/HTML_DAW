@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejemplo de formulario</title>
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" href="img/favicon.png" />
+	</head>
+	
+	<body>
+		<h1 align="center">EJEMPLO DE FORMULARIO</h1>
+		<hr>
+		<h2>Activar y desactivar elementos</h2>
+		<p>Al seleccionar "Directo" se activan las subopciones. Al seleccionar "Mediante prueba", se deseleccionan.</p>
+		<form option="index.html" method="post">
+			<fieldset>
+				<legend>Requisitos de acceso</legend>
+				
+				<dl>
+					<dt><input type="radio" name="acceso" value="directo" id="directo" />
+				<label for="directo">Directo</label>
+				
+						<dd><input type="radio" name="directo_etapa" value="bachi_logse" id="bachi_logse" /><label for="bachi_logse">Bachillerato LOGSE. Modalidad</label>
+						</dd>
+						
+						<dd><input type="radio" name="directo_etapa" value="bachi_ex" id="bachi_ex" /><label for="bachi_ex">Bachillerato experimental</label>
+						</dd>
+						
+						<dd><input type="radio" name="directo_etapa" value="cou" id="cou" /><label for="cou">COU.</label>
+						<label for="cou1">Opción</label><input type="text" name="coutext" id="cou1" />
+						</dd>
+						
+						<dd><input type="radio" name="directo_etapa" value="fp2" id="fp2" /><label for="fp2">FP2</label>
+						</dd>
+						
+						<dd><input type="radio" name="directo_etapa" value="other" id="other" /><label for="other">Otros</label><label for="other1"> (especifique)</label><input type="text" name="othertext" id="other1" />
+						</dd>
+					</dt>
+					
+					<dt>
+						<input type="radio" name="acceso" value="prueba" id="prueba" />
+				<label for="prueba">Mediante prueba</label>
+					</dt>
+				</dl>
+			</fieldset>
+			
+			</hr>
+				<h2>Modificar una lista en función de otra</h2>
+				<p>Al seleccionar un nivel, la lista de recursos ofrece las opciones posibles para ese nivel.</p>
+			
+			<fieldset>
+				<legend>Datos personales</legend>
+				<label for="nivel">Nivel:</label>
+				<select name="nivel" id="nivel">
+					<option value="primero">1º DE ESO</option>
+					<option value="segundo">2º DE ESO</option>
+					<option value="tercero">3º DE ESO</option>
+					<option value="cuarto">4º DE ESO</option>
+				</select>
+				
+				<label for="curso">- Curso:</label>
+				<select name="curso" id="curso">
+					<option value="primeroa">1ºA</option>
+					<option value="segundob">2ºB</option>
+					<option value="terceroc">3ºC</option>
+					<option value="cuartoa">4ºA</option>
+				</select>
+			</fieldset>
+			
+			</hr>
+				<h2>Avisar de que algo no esta relleno</h2>
+				<p>Al enviar el formulario, avisa de que no se ha rellenado algún campo</p>
+			<fieldset>
+				<legend>Datos personales</legend>
+				<ul>
+					<p><li><label for="name">Nombre:</label>
+					<input type="text" id="name" name="name" /></li></p>
+					
+					<p><li><label for="nacimiento">Nacido en:</label>
+					<select name="nacimiento" id="nacimiento">
+						<option value="españa" selected>España</option>
+						<option value="alemania">Alemania</option>
+						<option value="eeuu">Estados Unidos</option>
+						<option value="reinounido">Reino Unido</option>
+					</select></li></p>
+					
+					<p><li><label for="sexo">Sexo:</label>
+					<input type="radio" id="hombre" name="sexo" value="hombre">
+					<label for="hombre">Hombre</label>
+					<input type="radio" id="mujer" name="sexo" value="mujer">
+					<label for="mujer">Mujer</label></li></p>
+				</ul>
+				
+				<div align="right">
+					<input type="reset" id="reset" name="reset" value="Borrar todo" />
+					<input type="submit" id="comprobar" name="comprobar" value="Comprobar" />
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
