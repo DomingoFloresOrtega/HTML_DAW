@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulario de registro - Mi web</title>
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" href="../Images/favicon.jpg" />
+	</head>
+	
+	<body>
+		
+		<h1>Formulario</h1>
+		<form action="../Principal/index.html" method="GET">
+			<fieldset>
+				<legend>Completar</legend>
+				
+				<label for="name">Nombre:</label>
+				<input type="text" name="name" id="name" maxlength="50"/></br>
+				
+				<label for="ape">Apellidos:</label>
+				<input type="text" name="apellidos" id="ape" maxlength="50" /></br>
+				
+				<label for="pass">Contraseña:</label>
+				<input type="password" name="password" id="pass" maxlength="50" /></br>
+				
+				</br>
+				
+				<input type="checkbox" name="lcl" id="lcl" />
+				<label for="lcl">Lengua</label>
+				
+				<input type="checkbox" name="mat" id="mat" />
+				<label for="mat">Matemáticas</label>
+				
+				<input type="checkbox" name="his" id="his" />
+				<label for="his">Historia</label>
+				
+				<input type="checkbox" name="geh" id="geh" />
+				<label for="geh">Geografía</label></br>
+				
+				<label for="file">Elija un fichero:<label>
+				<input type="file" name="file" id="file" />
+				
+				</br>
+				<textarea name="textarea" placeholder="Utilice este cuadro para escribir" cols="50" rows="4"  ></textarea>
+				
+				</br>
+				<input type="radio" name="file_format" id="jpg" value="jpg" />
+				<label for="jpg">JPG</label>
+				<input type="radio" name="file_format" id="png" value="png" checked />
+				<label for="png">PNG</label>
+				
+				
+				<p>
+					<label for="ports">Seleccione un Puerto de Comunicaciones:</label></br>
+					<select name="ports" id="ports" size="3" multiple>
+						<option>USB</option>
+						<option>Paralelo</option>
+						<option selected>PS2</option>
+					</select>
+				</p>
+			</fieldset>
+			
+			<p align="right">
+				<input type="submit" name="enviar" value="Enviar" />
+				<input type="reset" name="borrar" value="Borrar Todo" />
+			</p>
+		</form>
+	</body>
+</html>
